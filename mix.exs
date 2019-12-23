@@ -11,6 +11,14 @@ defmodule ElixirSdetExercise.MixProject do
     ]
   end
 
+  def application do
+  [applications: [:logger, :hound]]
+end
+
+defp deps do
+  [{:hound, "~> 1.0"}]
+end
+
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
@@ -26,4 +34,5 @@ defmodule ElixirSdetExercise.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
   end
+
 end

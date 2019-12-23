@@ -30,3 +30,5 @@ config :hound, driver: "chrome_driver"
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env()}.exs"
+
+config :hound, driver: "phantomjs"
